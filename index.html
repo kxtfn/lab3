@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог книг навчального HTML5-проєкту Аксьонова Ігоря.">
+    <title>Каталог — Бібліотека книг</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header id="top">
+    <h1>Бібліотека книг</h1>
+    <p>Лабораторна робота №3 — HTML5: таблиці, списки, медіа та навігація.</p>
+    <p>Виконав: Аксьонов Ігор, група ІН-43-5.</p>
+
+    <nav aria-label="Основна навігація">
+        <ul>
+            <li><a href="index.html" aria-current="page">Каталог</a></li>
+            <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article id="about">
+        <h2>Про каталог</h2>
+        <p>
+            Ця сторінка є навчальним каталогом книг для практичного опрацювання
+            семантичної розмітки HTML5, навігації, доступності та перевірки валідності.
+        </p>
+    </article>
+
+    <section id="filters" aria-labelledby="filters-title">
+        <h2 id="filters-title">Фільтри каталогу</h2>
+        <form>
+            <fieldset>
+                <legend>Параметри пошуку</legend>
+                <p>
+                    <label for="genre">Жанр:</label>
+                    <select id="genre" name="genre">
+                        <option value="">Усі жанри</option>
+                        <option value="dystopia">Антиутопія</option>
+                        <option value="fantasy">Фентезі</option>
+                        <option value="science-fiction">Фантастика</option>
+                        <option value="classic">Класика</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="min-pages">Мінімальна кількість сторінок:</label>
+                    <input id="min-pages" name="min-pages" type="number" min="0" step="1">
+                </p>
+                <p>
+                    <input id="unread-only" name="unread-only" type="checkbox">
+                    <label for="unread-only">Показати лише непрочитані книги</label>
+                </p>
+                <p>
+                    <button type="submit">Застосувати</button>
+                    <button type="reset">Скинути</button>
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="catalog" aria-labelledby="catalog-title">
+        <h2 id="catalog-title">Каталог книг</h2>
+        <p>У каталозі наведено шість книг. Натисніть на назву книги, щоб перейти до сторінки деталей.</p>
+        <ul>
+            <li>
+                <article>
+                    <h3><a href="details.html">1984</a></h3>
+                    <img src="images/1984.jpg" width="320" height="480"
+                         alt="Навчальна обкладинка книги 1984" fetchpriority="high">
+                    <p><strong>Автор:</strong> Джордж Орвелл</p>
+                    <p><strong>Жанр:</strong> Антиутопія</p>
+                    <p><strong>Рік видання:</strong> <time datetime="1949-06-08">1949</time></p>
+                    <p><strong>Кількість сторінок:</strong> <data value="328">328</data></p>
+                    <p><strong>Опис:</strong> Роман про суспільство тотального контролю, де держава намагається керувати інформацією, поведінкою та думками людей.</p>
+                    <p><strong>Прочитано:</strong> так</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3><a href="details.html">Гобіт</a></h3>
+                    <img src="images/hobbit.jpg" width="320" height="480"
+                         alt="Навчальна обкладинка книги Гобіт" loading="lazy">
+                    <p><strong>Автор:</strong> Дж. Р. Р. Толкін</p>
+                    <p><strong>Жанр:</strong> Фентезі</p>
+                    <p><strong>Рік видання:</strong> <time datetime="1937-09-21">1937</time></p>
+                    <p><strong>Кількість сторінок:</strong> <data value="310">310</data></p>
+                    <p><strong>Опис:</strong> Пригодницька історія про Більбо Торбина, який вирушає у подорож разом із гномами та поступово відкриває у собі сміливість.</p>
+                    <p><strong>Прочитано:</strong> так</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3><a href="details.html">451° за Фаренгейтом</a></h3>
+                    <img src="images/fahrenheit-451.jpg" width="320" height="480"
+                         alt="Навчальна обкладинка книги 451° за Фаренгейтом" loading="lazy">
+                    <p><strong>Автор:</strong> Рей Бредбері</p>
+                    <p><strong>Жанр:</strong> Фантастика</p>
+                    <p><strong>Рік видання:</strong> <time datetime="1953-10-19">1953</time></p>
+                    <p><strong>Кількість сторінок:</strong> <data value="249">249</data></p>
+                    <p><strong>Опис:</strong> Історія світу, у якому книги заборонені, а головний герой починає сумніватися у правилах системи, частиною якої він є.</p>
+                    <p><strong>Прочитано:</strong> ні</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3><a href="details.html">Маленький принц</a></h3>
+                    <img src="images/little-prince.jpg" width="320" height="480"
+                         alt="Навчальна обкладинка книги Маленький принц" loading="lazy">
+                    <p><strong>Автор:</strong> Антуан де Сент-Екзюпері</p>
+                    <p><strong>Жанр:</strong> Класика</p>
+                    <p><strong>Рік видання:</strong> <time datetime="1943-04-06">1943</time></p>
+                    <p><strong>Кількість сторінок:</strong> <data value="96">96</data></p>
+                    <p><strong>Опис:</strong> Філософська казка про дружбу, відповідальність і здатність бачити важливе не лише очима, а й серцем.</p>
+                    <p><strong>Прочитано:</strong> так</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3><a href="details.html">Гордість і упередження</a></h3>
+                    <img src="images/pride-prejudice.jpg" width="320" height="480"
+                         alt="Навчальна обкладинка книги Гордість і упередження" loading="lazy">
+                    <p><strong>Автор:</strong> Джейн Остін</p>
+                    <p><strong>Жанр:</strong> Класика</p>
+                    <p><strong>Рік видання:</strong> <time datetime="1813-01-28">1813</time></p>
+                    <p><strong>Кількість сторінок:</strong> <data value="432">432</data></p>
+                    <p><strong>Опис:</strong> Роман про стосунки, суспільні очікування та помилкові перші враження на прикладі історії Елізабет Беннет і містера Дарсі.</p>
+                    <p><strong>Прочитано:</strong> ні</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3><a href="details.html">Франкенштейн</a></h3>
+                    <img src="images/frankenstein.jpg" width="320" height="480"
+                         alt="Навчальна обкладинка книги Франкенштейн" loading="lazy">
+                    <p><strong>Автор:</strong> Мері Шеллі</p>
+                    <p><strong>Жанр:</strong> Класика</p>
+                    <p><strong>Рік видання:</strong> <time datetime="1818-01-01">1818</time></p>
+                    <p><strong>Кількість сторінок:</strong> <data value="280">280</data></p>
+                    <p><strong>Опис:</strong> Історія вченого Віктора Франкенштейна та наслідків його експерименту зі створення живої істоти.</p>
+                    <p><strong>Прочитано:</strong> ні</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <aside aria-labelledby="additional-title">
+        <h2 id="additional-title">Додаткова інформація</h2>
+        <p>
+            У наступних лабораторних роботах до каталогу можна додати CSS-оформлення,
+            JavaScript-фільтрацію, сортування та завантаження даних із зовнішнього API.
+        </p>
+        <p><a href="#top">Повернутися на початок сторінки</a></p>
+    </aside>
+</main>
+
+<footer id="contacts">
+    <h2>Контакти</h2>
+    <address>
+        Автор: Аксьонов Ігор<br>
+        Група: ІН-43-5<br>
+        Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+    </address>
+    <p><small>© 2026 Аксьонов Ігор. Навчальна робота.</small></p>
+</footer>
+</body>
+</html>

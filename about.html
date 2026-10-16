@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Інформація про навчальний проєкт «Бібліотека книг», його можливості, медіа та часті запитання.">
+    <title>Про проєкт — Бібліотека книг</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header id="top">
+    <p><strong>Бібліотека книг</strong></p>
+    <p>Лабораторна робота №3 — HTML5: таблиці, списки, медіа та навігація.</p>
+    <p>Виконав: Аксьонов Ігор, група ІН-43-5.</p>
+
+    <nav aria-label="Основна навігація">
+        <ul>
+            <li><a href="index.html">Каталог</a></li>
+            <li><a href="about.html" aria-current="page">Про проєкт</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Про проєкт</h1>
+    <p>
+        «Бібліотека книг» — навчальний каталог, створений для демонстрації
+        семантичної розмітки та можливостей HTML5.
+    </p>
+
+    <section>
+        <h2>Як користуватися каталогом</h2>
+        <ol>
+            <li>Відкрити сторінку каталогу.</li>
+            <li>Знайти потрібну книгу.</li>
+            <li>Натиснути на назву книги.</li>
+            <li>Переглянути опис, характеристики та таблицю видань.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Майбутні можливості</h2>
+        <ul>
+            <li>CSS-оформлення сторінок.</li>
+            <li>Пошук книг.</li>
+            <li>Фільтрація та сортування каталогу.</li>
+            <li>Завантаження інформації через API.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Відео про проєкт</h2>
+        <video controls width="640" height="360" preload="metadata" poster="media/preview.jpg">
+            <source src="media/library.webm" type="video/webm">
+            <source src="media/library.mp4" type="video/mp4">
+            <track kind="captions" src="media/library-uk.vtt" srclang="uk"
+                   label="Українська" default>
+            <p>
+                Ваш браузер не підтримує відео.
+                <a href="media/library.mp4">Завантажити відеофайл</a>.
+            </p>
+        </video>
+        <p>Відеоматеріал і зображення для цієї лабораторної роботи створено для навчального проєкту.</p>
+    </section>
+
+    <section>
+        <h2>Часті запитання</h2>
+
+        <details name="faq">
+            <summary>Для чого створено цей каталог?</summary>
+            <p>Каталог створено як навчальний HTML5-проєкт для роботи з різними типами вмісту.</p>
+        </details>
+
+        <details name="faq">
+            <summary>Чи можна додавати нові книги?</summary>
+            <p>Так, структуру каталогу можна доповнювати новими картками та сторінками деталей.</p>
+        </details>
+
+        <details name="faq">
+            <summary>Чи буде додано пошук і фільтрацію?</summary>
+            <p>Так, у наступних роботах ці можливості можна реалізувати за допомогою JavaScript.</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Навчальний контакт</h2>
+        <address>
+            Аксьонов Ігор, група ІН-43-5<br>
+            Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+        </address>
+    </section>
+
+    <p><a href="#top">Повернутися на початок сторінки</a></p>
+</main>
+
+<footer id="contacts">
+    <h2>Контакти</h2>
+    <address>
+        Автор: Аксьонов Ігор<br>
+        Група: ІН-43-5<br>
+        Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+    </address>
+    <p><small>© 2026 Аксьонов Ігор. Навчальна робота.</small></p>
+</footer>
+</body>
+</html>
